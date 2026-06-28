@@ -5,21 +5,21 @@
 class Chkcerts < Formula
   desc "Display and validate TLS certificate chains from the command line"
   homepage "https://github.com/chris-short/chkcerts"
-  version "0.20260627.27"
+  version "0.20260628.24"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chris-short/chkcerts/releases/download/v0.20260627.27/chkcerts_Darwin_x86_64.tar.gz"
-      sha256 "4517b1612ce2182f36dca77b386dc6bde65c543a5e725b471158b82665506cdf"
+      url "https://github.com/chris-short/chkcerts/releases/download/v0.20260628.24/chkcerts_Darwin_x86_64.tar.gz"
+      sha256 "43958311e6011b2fc5fd420f459de9abb5aed23c4854b377f5c9e79065eba6b1"
 
       define_method(:install) do
         bin.install "chkcerts"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chris-short/chkcerts/releases/download/v0.20260627.27/chkcerts_Darwin_arm64.tar.gz"
-      sha256 "fffd35766e09195c387367cfa3022fe6fc3cfa9f5270a8473105e19a924a04a7"
+      url "https://github.com/chris-short/chkcerts/releases/download/v0.20260628.24/chkcerts_Darwin_arm64.tar.gz"
+      sha256 "d78f6ab76ff88c8c2ff482a7185f2f5c0525b0c241aaf629e7016cabb739ec59"
 
       define_method(:install) do
         bin.install "chkcerts"
@@ -29,15 +29,15 @@ class Chkcerts < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chris-short/chkcerts/releases/download/v0.20260627.27/chkcerts_Linux_x86_64.tar.gz"
-      sha256 "b2c44d2b9a097561d0280aa5802e85289713d2bae951a5631eaecceb1e073397"
+      url "https://github.com/chris-short/chkcerts/releases/download/v0.20260628.24/chkcerts_Linux_x86_64.tar.gz"
+      sha256 "4b1049ff05b32f20dfc42091bb6a09786a657319bd8d8f285069d8281268aefc"
       define_method(:install) do
         bin.install "chkcerts"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chris-short/chkcerts/releases/download/v0.20260627.27/chkcerts_Linux_arm64.tar.gz"
-      sha256 "76e00b12a477d61a01eed84304f13a2c19cfe07b0215ec5fdb505ea82ee4cf6c"
+      url "https://github.com/chris-short/chkcerts/releases/download/v0.20260628.24/chkcerts_Linux_arm64.tar.gz"
+      sha256 "13bfbedb14887303504ad897df36d59d28b8be866b37d43aed74f3d8063d0710"
       define_method(:install) do
         bin.install "chkcerts"
       end
